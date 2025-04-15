@@ -4,22 +4,26 @@ calculator.py
 
 One function per operation, in order.
 """
-# First example
 import math
+# First example
+def add(a, b): 
+    return a + b
 
-def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError("Negative input not allowed")
-        return math.sqrt(a)
-    except ValueError:
-        raise
+def sub(a,b):
+    return a - b
 
-def hypotenuse(a, b):
-    return math.hypot(a, b)
+def mul(a, b): 
+    return a * b
 
-def add(x, y):
-    return x + y
+def div(a, b): 
+    return a / b
+
+def log(a, b): 
+    return math.log(b, a)
+
+def exp(a, b): 
+    return a ** b
+import math
 
 def add(a, b):
     return a + b
@@ -30,10 +34,6 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Division by zero")
-    return b / a
 
 def logarithm(a, b):
     if a <= 0 or a == 1:
